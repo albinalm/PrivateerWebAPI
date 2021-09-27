@@ -40,7 +40,7 @@ namespace Privateer.Register
 
             string responseMessage = string.IsNullOrEmpty(name)
                 ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
-                : $"Hello, {name}. This HTTP triggered function executed successfully.";
+                : $"Hello, {name}. This HTTP triggered function executed successfully and has been updated via VSCode, pushed to github and then automatically deployed here as a part of the CI pipeline!";
 
             return new OkObjectResult(responseMessage);
         }
